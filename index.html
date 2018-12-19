@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello github pages!</title>
+</head>
+<body>
+    <h1>初めてのgithub pages</h1>
+    <p>JavaScriptを動かそう</p>
+    <form>
+        <input type="number" id="a" value = 1></input>
+        +
+        <input type="number" id="b" value = 1></input>
+        =
+        <input type="number" id="c" value = 2></input>
+        <button id="go" type="button">Go</button>
+        <p id="output"></p>
+    </form>
+</body>
+<script>
+    /*Goボタンをクリックしたときのイベントハンドラ*/
+    document.getElementById("go").addEventListener("click",function(){
+        var a = parseInt(document.getElementById("a").value,10);//左のテキストボックス
+        var b = parseInt(document.getElementById("b").value,10);//中央のテキストボックス
+        var c = parseInt(document.getElementById("c").value,10);//右のテキストボックス
+        
+        //a+b=cだったら"上の式は正しいです"と出力，a+b≠cだったら"上の式は正しくありません！"と出力
+        equal(a+b,c)? outputString("上の式は正しいです！"):outputString("上の式は正しくありません！");
+    },false);
+
+    /*二つの数値を比較して同一だったらtrue，同一でなければfalseを返す関数*/
+    function equal(a,b){
+        var isEqual = false;
+        if(a = b){
+            //a=bだったらtrueにする
+            isEqual = true;
+        }
+        return isEqual;
+    }
+
+    /*文字列を表示する関数*/
+    function outputString(text){
+        document.getElementById("output").innerHTML = text;
+    }
+</script>
+</html>
