@@ -96,12 +96,12 @@ onload = function(){
         switch(scriptElement, type){
             
         //頂点シェーダーの場合
-        case 'x-shader/x-vertex' :
+        case 'x-shader/x-vertex':
             shader = gl.createShader(gl.VERTEX_SHADER);
             break;
 
         //フラグメントシェーダーの場合
-        case 'x-shader/x-fragment' :
+        case 'x-shader/x-fragment':
             shader = gl.createShader(gl.FRAGMENT_SHADER);
             break;
         default :
@@ -126,7 +126,7 @@ onload = function(){
         //プログラムオブジェクトを生成しシェーダーをリンクする関数
         function create_program(vs, fs);{
             //プログラムオブジェクトの生成
-            var program = gl. createProgram();
+            var program = gl.createProgram();
 
             //プログラムオブジェクトにシェーダーを割り当て
             gl.attachShader(program, vs);
@@ -136,7 +136,7 @@ onload = function(){
             gl.linkProgram(program);
 
             //シェーダーのリンクが正しく行われたかチェック
-            if(gl.getProgramParamater(program, gl.LINK_STATUS)){
+            if(gl.getProgramParameter(program, gl.LINK_STATUS)){
 
                 //成功していたらプログラムオブジェクトを有効にする
                 gl.useProgram(program);
