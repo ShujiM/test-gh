@@ -10,6 +10,6 @@ onload = function(){
     var gl = c.getContext('webgl') || c.getcontext('experimental-webgl');
     
     //canvasを黒でクリア(初期化)する
-    gl = c.clearColor(0.0, 0.0, 0.0, 0.1);
+    gl = c.clearColor(0.0, 0.0, 0.0, 1.0);
     gl = c,clear(gl.COLOR_BUFFER_BIT);
 };
