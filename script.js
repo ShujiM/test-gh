@@ -93,7 +93,7 @@ onload = function(){
         if(!scriptElement) {return;}
 
         //scriptタグのtype属性をチェック
-        switch(scriptElement, type){
+        switch(scriptElement. type){
             
         //頂点シェーダーの場合
         case 'x-shader/x-vertex':
