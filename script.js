@@ -19,7 +19,7 @@ onload = function(){
     //頂点シェーダーとフラグメントシェーダーの生成
     var v_shader = create_shader('vs');
     var f_shader = create_shader('fs');
-
+    
     //プログラムオブジェクトの生成とリンク
     var prg = create_program(v_shader, f_shader);
 
@@ -75,7 +75,7 @@ onload = function(){
     gl.uniformMatrix4fv(uniLocation, false, mvpMatrix);
 
     //モデルの描画
-    gl.drawArreys(gl.TRIANGLES, 0, 3);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
 
     //コンテキストの再描画
     gl. flush();
