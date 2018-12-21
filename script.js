@@ -5,7 +5,7 @@ onload = function(){
     c.height = 300;
 
     //webGLコンテキストを取得
-    var gl = c.getContext('webgl');
+    var gl = c.getContext('webgl')|| c.getContext('experimental-webgl');
     
     //canvasを初期化する色を設定
     gl. clearColor(0.0, 0.0, 0.0, 1.0);
@@ -81,7 +81,7 @@ onload = function(){
     gl. flush();
 
     //シェーダーを生成する関数
-    function create_shader(id);
+    function create_shader(id){
         
         //シェーダーを格納する変数
         var shader;
