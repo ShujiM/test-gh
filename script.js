@@ -124,7 +124,7 @@ onload = function(){
                 }
         }
         //プログラムオブジェクトを生成しシェーダーをリンクする関数
-        function create_program(vs, fs);{
+        function create_program(vs, fs){
             //プログラムオブジェクトの生成
             var program = gl.createProgram();
 
