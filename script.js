@@ -8,7 +8,7 @@ onload = function(){
     var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
     
     //canvasを初期化する色を設定
-    gl. clearColor(0.0, 0.0, 0.5, 1.0);
+    gl. clearColor(0.0, 0.5, 0.5, 1.0);
 
     //canvasを初期化する際の深度を設定
     gl. clearDepth(1.0);
@@ -38,7 +38,7 @@ onload = function(){
 
     var vertex_position = [
         -1.0, 1.0, 0.0,
-        0.0, 0.0, 2.0,
+        0.0, 5.0, 2.0,
         1.0, 0.0, -1.0
     ];
 
