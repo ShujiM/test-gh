@@ -36,6 +36,12 @@ onload = function(){
         -1.0, 0.0, 0.0
     ];
 
+    var vertex_position = [
+        -1.0, 1.0, 0.0,
+        0.0, 0.0, 2.0,
+        1.0, 0.0, -1.0
+    ];
+
     //VBOの生成
     var vbo = create_vbo(vertex_position);
 
