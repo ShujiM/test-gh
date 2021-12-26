@@ -1,18 +1,15 @@
-img{
-    border-radius: 50%;
-}
 section{
     border-width: 2px;
     border-color: gray;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 24px;
     margin-bottom: 8px;
     background-image: url(img/01.png);
     text-align: center;
 }
-body{
-
+.img-01{
+    border-radius: 50%;
 }
 .selection{
     color: hotpink;
@@ -31,4 +28,7 @@ body{
     border-width: 1px;
     border-color: darkgrey;
     text-decoration: none;
+}
+.carousel-inner{
+    border-radius: 10px;
 }
