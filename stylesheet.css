@@ -1,34 +1,13 @@
-section{
-    border-width: 2px;
-    border-color: gray;
-    border-style: solid;
-    border-radius: 30px;
-    padding: 24px;
-    margin-bottom: 8px;
-    background-image: url(img/01.png);
-    text-align: center;
+iframe {
+    border: 5px solid black;
+    width: 100%;
+    transform: scale(0.5);
+    transform-origin: 0 5;
 }
-.img-01{
-    border-radius: 50%;
-}
-.selection{
-    color: hotpink;
+
+.output {
+    background: rgb(149, 204, 241);
 }
 .copylight{
     text-align: center;
-}
-.test01{
-    text-align: right;
-    color: brown;
-}
-.a_button{
-    display: inline-block;
-    border-style: solid;
-    background-color: lightgray;
-    border-width: 1px;
-    border-color: darkgrey;
-    text-decoration: none;
-}
-.carousel-inner{
-    border-radius: 10px;
 }
